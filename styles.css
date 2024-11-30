@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Parkinsans", sans-serif;
 }
 html,
 body {
@@ -11,4 +13,124 @@ body {
 .container {
   width: 90%;
   margin: 0 auto;
+}
+.main-nav {
+  background-color: rgb(232, 235, 244);
+  display: flex;
+}
+.content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.mobile-nav-main {
+  background-color: aliceblue;
+  box-shadow: 0px 0px 10px 1px rgb(180, 180, 180);
+  padding: 1rem;
+  border-radius: 16px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  height: 80vh;
+  min-width: 45%;
+}
+
+.mobile-nav-main .profile {
+  border-bottom: 1px solid rgba(173, 173, 173, 0.532);
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.mobile-nav-main .profile .image-wrapper {
+  width: 50px;
+  height: 45px;
+
+  display: flex;
+  align-items: center;
+}
+
+.mobile-nav-main .profile .image-wrapper img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  border: 0.5px solid rgb(122, 157, 175);
+}
+.profile-info span {
+  font-size: 14px;
+}
+
+.profile-info .profile-title {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.mobile-nav-main .menus {
+  flex-grow: 2;
+}
+
+.mobile-nav-main .menus .menus-uppersec {
+  border-bottom: 1px solid rgba(173, 173, 173, 0.532);
+  margin-bottom: 1rem;
+}
+
+.mobile-nav-main .menus .menus-lowersec {
+}
+
+.menus .profile-menus {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  margin-bottom: 1rem;
+}
+
+.menus .profile-menus:hover {
+  cursor: pointer;
+  background-color: rgba(183, 183, 183, 0.145);
+  transition: all 0.3s ease;
+}
+
+.menus .profile-menus .profile-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.menus .profile-menus .profile-wrapper .profile-name {
+  font-size: 13px;
+}
+
+.profile-icon {
+  padding: 2px;
+  background-color: rgb(226, 232, 249);
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.last-nav-icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.last-nav-icons .icon-wrapper {
+  border-radius: 50%;
+  display: flex;
+  padding: 7px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.last-nav-icons .icon-wrapper:hover {
+  background-color: rgba(208, 208, 208, 0.3);
+  transition: all 0.2s ease-in-out;
 }

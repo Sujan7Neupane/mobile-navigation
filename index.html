@@ -1,41 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mobile Navigation</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-          }
-          html,
-          body {
-            height: 100%;
-            width: 100%;
-          }
-          .container {
-            width: 90%;
-            margin: 0 auto;
-          }
-          .main-nav {
-            background-color: bisque;
-            display: flex;
-            height: 100vh;
-          }
-    </style>
-    <!-- <link rel="stylesheet" href="styles.css"> -->
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
     <section class="main-nav">
-        <div class="container">
-            Hello
-        </div>
-    </section>
-    <!-- <script src="script.js"></script> -->
-     <script>
+      <div class="container">
+        <div class="content-wrapper">
+          <div class="mobile-nav-main">
+            <div class="profile">
+              <div class="image-wrapper">
+                <img src="./images/profile1.avif" alt="profile-img" />
+              </div>
+              <div class="profile-info">
+                <h4 class="profile-title">Lisa Richardson</h4>
+                <span>Environmental meterologist</span>
+              </div>
+            </div>
+            <!--profile-section end-->
 
-     </script>
-</body>
+            <div class="menus">
+              <div class="menus-uppersec">
+                <div class="profile-menus">
+                  <div class="profile-wrapper">
+                    <div class="profile-icon">
+                      <box-icon name="group" type="solid"></box-icon>
+                    </div>
+                    <h4 class="profile-name">Personal Data</h4>
+                  </div>
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAfNJREFUSEuVVuG5wyAIPDd5ozSbpJO0m2SU9zZ5bmKrJREExOZP+yXowR2cJoxPAlAA+mlf23/jvbe2v+e76D3V+hqSUCr+9OkJyXiVtJFhjbmeb6vs8SuJ6upD4KDwmBUSrLHIJDOBu7j0WSZsy+vFGO8TbxxO+orGnkwqaVdjQudgdkIr1fvUjNPha7Q8R3JU+AyqYk69eWe2AfaK6oE3AAeADUC2sv56nGJt8APgn8AqqASfNpd0IHeOJzPyeH97ErkZCRsKctD0yiwYsNXzH/s0mHi8gZ/krRkFWwLyOaMLzDUbDprL7eTHe/GT8tK0myPUbVgDx53BW5hobygS3NhHDMmyNj5/A3jaEkq2Feoz42i84o8Xl3W0dlpRq74D+BNMO+0zlbl+nKTRQCmmVqlBR2cQh8RygWIWL9CqbwLupVUq55W72GhQZmxAwwGknTYa6DWAT5vkx2LcXDIiAUcheqmTB3rjHU/5jAuWd89KN6D8kqNkoBBocCIZ9DmW6V1l2vu9AHWEPqAes4aB8Fvk3LnCfo8CeAFKsmgxV0Ivtm6i00OKObAUdMXhHc3cQ0JlUpkYB5xvujLfwoDZacbPFheYL54yvz4q2qvlqfG5ZcYyG3LIRVNdJebV3N5NzU9nOVvP54XGQQUq6y/QDb1f+8jrKNKf3zkAAAAASUVORK5CYII="
+                  />
+                </div>
+
+                <div class="profile-menus">
+                  <div class="profile-wrapper">
+                    <div class="profile-icon">
+                      <box-icon name="envelope" type="solid"></box-icon>
+                    </div>
+                    <h4 class="profile-name">Messages</h4>
+                  </div>
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAfNJREFUSEuVVuG5wyAIPDd5ozSbpJO0m2SU9zZ5bmKrJREExOZP+yXowR2cJoxPAlAA+mlf23/jvbe2v+e76D3V+hqSUCr+9OkJyXiVtJFhjbmeb6vs8SuJ6upD4KDwmBUSrLHIJDOBu7j0WSZsy+vFGO8TbxxO+orGnkwqaVdjQudgdkIr1fvUjNPha7Q8R3JU+AyqYk69eWe2AfaK6oE3AAeADUC2sv56nGJt8APgn8AqqASfNpd0IHeOJzPyeH97ErkZCRsKctD0yiwYsNXzH/s0mHi8gZ/krRkFWwLyOaMLzDUbDprL7eTHe/GT8tK0myPUbVgDx53BW5hobygS3NhHDMmyNj5/A3jaEkq2Feoz42i84o8Xl3W0dlpRq74D+BNMO+0zlbl+nKTRQCmmVqlBR2cQh8RygWIWL9CqbwLupVUq55W72GhQZmxAwwGknTYa6DWAT5vkx2LcXDIiAUcheqmTB3rjHU/5jAuWd89KN6D8kqNkoBBocCIZ9DmW6V1l2vu9AHWEPqAes4aB8Fvk3LnCfo8CeAFKsmgxV0Ivtm6i00OKObAUdMXhHc3cQ0JlUpkYB5xvujLfwoDZacbPFheYL54yvz4q2qvlqfG5ZcYyG3LIRVNdJebV3N5NzU9nOVvP54XGQQUq6y/QDb1f+8jrKNKf3zkAAAAASUVORK5CYII="
+                  />
+                </div>
+
+                <div class="profile-menus">
+                  <div class="profile-wrapper">
+                    <div class="profile-icon">
+                      <box-icon name="bell-ring" type="solid"></box-icon>
+                    </div>
+                    <h4 class="profile-name">Notifications</h4>
+                  </div>
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAfNJREFUSEuVVuG5wyAIPDd5ozSbpJO0m2SU9zZ5bmKrJREExOZP+yXowR2cJoxPAlAA+mlf23/jvbe2v+e76D3V+hqSUCr+9OkJyXiVtJFhjbmeb6vs8SuJ6upD4KDwmBUSrLHIJDOBu7j0WSZsy+vFGO8TbxxO+orGnkwqaVdjQudgdkIr1fvUjNPha7Q8R3JU+AyqYk69eWe2AfaK6oE3AAeADUC2sv56nGJt8APgn8AqqASfNpd0IHeOJzPyeH97ErkZCRsKctD0yiwYsNXzH/s0mHi8gZ/krRkFWwLyOaMLzDUbDprL7eTHe/GT8tK0myPUbVgDx53BW5hobygS3NhHDMmyNj5/A3jaEkq2Feoz42i84o8Xl3W0dlpRq74D+BNMO+0zlbl+nKTRQCmmVqlBR2cQh8RygWIWL9CqbwLupVUq55W72GhQZmxAwwGknTYa6DWAT5vkx2LcXDIiAUcheqmTB3rjHU/5jAuWd89KN6D8kqNkoBBocCIZ9DmW6V1l2vu9AHWEPqAes4aB8Fvk3LnCfo8CeAFKsmgxV0Ivtm6i00OKObAUdMXhHc3cQ0JlUpkYB5xvujLfwoDZacbPFheYL54yvz4q2qvlqfG5ZcYyG3LIRVNdJebV3N5NzU9nOVvP54XGQQUq6y/QDb1f+8jrKNKf3zkAAAAASUVORK5CYII="
+                  />
+                </div>
+
+                <div class="profile-menus">
+                  <div class="profile-wrapper">
+                    <div class="profile-icon">
+                      <box-icon name="current-location"></box-icon>
+                    </div>
+                    <h4 class="profile-name">Location</h4>
+                  </div>
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAfNJREFUSEuVVuG5wyAIPDd5ozSbpJO0m2SU9zZ5bmKrJREExOZP+yXowR2cJoxPAlAA+mlf23/jvbe2v+e76D3V+hqSUCr+9OkJyXiVtJFhjbmeb6vs8SuJ6upD4KDwmBUSrLHIJDOBu7j0WSZsy+vFGO8TbxxO+orGnkwqaVdjQudgdkIr1fvUjNPha7Q8R3JU+AyqYk69eWe2AfaK6oE3AAeADUC2sv56nGJt8APgn8AqqASfNpd0IHeOJzPyeH97ErkZCRsKctD0yiwYsNXzH/s0mHi8gZ/krRkFWwLyOaMLzDUbDprL7eTHe/GT8tK0myPUbVgDx53BW5hobygS3NhHDMmyNj5/A3jaEkq2Feoz42i84o8Xl3W0dlpRq74D+BNMO+0zlbl+nKTRQCmmVqlBR2cQh8RygWIWL9CqbwLupVUq55W72GhQZmxAwwGknTYa6DWAT5vkx2LcXDIiAUcheqmTB3rjHU/5jAuWd89KN6D8kqNkoBBocCIZ9DmW6V1l2vu9AHWEPqAes4aB8Fvk3LnCfo8CeAFKsmgxV0Ivtm6i00OKObAUdMXhHc3cQ0JlUpkYB5xvujLfwoDZacbPFheYL54yvz4q2qvlqfG5ZcYyG3LIRVNdJebV3N5NzU9nOVvP54XGQQUq6y/QDb1f+8jrKNKf3zkAAAAASUVORK5CYII="
+                  />
+                </div>
+              </div>
+              <div class="menus-lowersec">
+                <div class="profile-menus">
+                  <div class="profile-wrapper">
+                    <div class="profile-icon">
+                      <box-icon type="solid" name="group"></box-icon>
+                    </div>
+                    <h4 class="profile-name">FAQs</h4>
+                  </div>
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAfNJREFUSEuVVuG5wyAIPDd5ozSbpJO0m2SU9zZ5bmKrJREExOZP+yXowR2cJoxPAlAA+mlf23/jvbe2v+e76D3V+hqSUCr+9OkJyXiVtJFhjbmeb6vs8SuJ6upD4KDwmBUSrLHIJDOBu7j0WSZsy+vFGO8TbxxO+orGnkwqaVdjQudgdkIr1fvUjNPha7Q8R3JU+AyqYk69eWe2AfaK6oE3AAeADUC2sv56nGJt8APgn8AqqASfNpd0IHeOJzPyeH97ErkZCRsKctD0yiwYsNXzH/s0mHi8gZ/krRkFWwLyOaMLzDUbDprL7eTHe/GT8tK0myPUbVgDx53BW5hobygS3NhHDMmyNj5/A3jaEkq2Feoz42i84o8Xl3W0dlpRq74D+BNMO+0zlbl+nKTRQCmmVqlBR2cQh8RygWIWL9CqbwLupVUq55W72GhQZmxAwwGknTYa6DWAT5vkx2LcXDIiAUcheqmTB3rjHU/5jAuWd89KN6D8kqNkoBBocCIZ9DmW6V1l2vu9AHWEPqAes4aB8Fvk3LnCfo8CeAFKsmgxV0Ivtm6i00OKObAUdMXhHc3cQ0JlUpkYB5xvujLfwoDZacbPFheYL54yvz4q2qvlqfG5ZcYyG3LIRVNdJebV3N5NzU9nOVvP54XGQQUq6y/QDb1f+8jrKNKf3zkAAAAASUVORK5CYII="
+                  />
+                </div>
+                <div class="profile-menus">
+                  <div class="profile-wrapper">
+                    <div class="profile-icon">
+                      <box-icon type="solid" name="cog"></box-icon>
+                    </div>
+                    <h4 class="profile-name">Settings</h4>
+                  </div>
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAfNJREFUSEuVVuG5wyAIPDd5ozSbpJO0m2SU9zZ5bmKrJREExOZP+yXowR2cJoxPAlAA+mlf23/jvbe2v+e76D3V+hqSUCr+9OkJyXiVtJFhjbmeb6vs8SuJ6upD4KDwmBUSrLHIJDOBu7j0WSZsy+vFGO8TbxxO+orGnkwqaVdjQudgdkIr1fvUjNPha7Q8R3JU+AyqYk69eWe2AfaK6oE3AAeADUC2sv56nGJt8APgn8AqqASfNpd0IHeOJzPyeH97ErkZCRsKctD0yiwYsNXzH/s0mHi8gZ/krRkFWwLyOaMLzDUbDprL7eTHe/GT8tK0myPUbVgDx53BW5hobygS3NhHDMmyNj5/A3jaEkq2Feoz42i84o8Xl3W0dlpRq74D+BNMO+0zlbl+nKTRQCmmVqlBR2cQh8RygWIWL9CqbwLupVUq55W72GhQZmxAwwGknTYa6DWAT5vkx2LcXDIiAUcheqmTB3rjHU/5jAuWd89KN6D8kqNkoBBocCIZ9DmW6V1l2vu9AHWEPqAes4aB8Fvk3LnCfo8CeAFKsmgxV0Ivtm6i00OKObAUdMXhHc3cQ0JlUpkYB5xvujLfwoDZacbPFheYL54yvz4q2qvlqfG5ZcYyG3LIRVNdJebV3N5NzU9nOVvP54XGQQUq6y/QDb1f+8jrKNKf3zkAAAAASUVORK5CYII="
+                  />
+                </div>
+              </div>
+            </div>
+            
+            <div class="nav-icons">
+              <div class="last-nav-icons">
+                <div class="icon-wrapper">
+                  <box-icon type="solid" name="home"></box-icon>
+                </div>
+                <div class="icon-wrapper">
+                  <box-icon name="cart-add"></box-icon>
+                </div>
+                <div class="icon-wrapper">
+                  <box-icon name="envelope"></box-icon>
+                </div>
+                <div class="icon-wrapper">
+                  <box-icon name="user"></box-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <!-- <script src="script.js"></script> -->
+    <script></script>
+  </body>
 </html>
